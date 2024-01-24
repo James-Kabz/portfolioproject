@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+           @media (max-width: 768px) {
+        /* Apply styles only when the screen width is 768 pixels or less */
+        #nav{
+            width: 100%; /* Make the navigation bar full width on small screens */
+        }
+        /* You may need to adjust the styles based on your specific design and preferences */
+        body.dark-mode {
+    background-color: #1a202c; /* Set the dark mode background color */
+    color: #ffffff; /* Set the dark mode text color */
+  }
+    }
+    </style>
+</head>
+<body class="dark-mode" class="bg-gradient-to-r from-violet-50 via-violet-50 to-violet-50">
+    <!-- navigation bar -->
+    <nav id="nav" class="shadow-lg fixed top-0 z-10 bg-white lg:w-full sm:h-44 ">
+        <div class="container flex justify-between  py-20">
+            <h1 class="pl-20 font-bold lg:text-5xl sm:text-2xl sm:text-left"><i class="fa fa-user" aria-hidden="true"></i> <span class="text-red-700">Kabz</span> Ngarang.</h1>
+            <!-- links -->
+
+            <div class=" hidden lg:flex sm:flex-row space-x-40 pl-52 text-4xl font-bold ">
+                <a href="#home" class="hover:-translate-x-5  hover: duration-300 text-purple-600 
+                 hover:text-purple-800 "><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                <a href="#skills" class="hover:-translate-x-5    hover: duration-300 hover:text-purple-800"><i class="fa fa-bars" aria-hidden="true"></i> Services</a>
+                <a href="#Portfolio" class="hover:-translate-x-5  hover: duration-300 hover:text-purple-800"><i class="fa fa-briefcase" aria-hidden="true"></i> Portfolio</a>
+                <a href="#about" class="hover:-translate-x-5  hover: duration-300 hover:text-purple-800"><i class="fa fa-user-circle" aria-hidden="true"></i> About</a>
+                <a href="#contact" class="hover:-translate-x-5  hover: duration-300 hover:text-purple-800"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                <button class="text-sm bg-purple-500 rounded-2xl m-6" onclick="changeBackgroundColor()">DARK MODE</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- content -->
+<div id="home" class="container flex flex-col lg:flex-row items-center lg:items-start mt-56 ml-5  lg:pt-56 gap-72">
+    <!-- Left Side -->
+    <div class="text-center lg:text-left lg:w-1/2 lg:ml-20">
+        <div class="pt-4 lg:pt-0 justify-between space-y-4 lg:space-y-10 ">
+            <h4 class="text-gray-900 font-bold text-3xl lg:text-4xl">Hello, It's Me</h4>
+            <h1 class="text-gray-800 font-extrabold text-5xl lg:text-7xl"><span class="text-red-700">Kabz</span> Ngarang</h1>
+            <h3 class="text-gray-700 font-bold text-4xl lg:text-10xl">And I'm a Web Developer|</h3>
+            <p class="text-gray-600 font-medium text-xl lg:text-5xl ">I specialize in developing and building responsive
+                websites that are not <br> only beautiful but also enhance seamless user experience</p>
+
+            <!-- button -->
+            <button class="btn bg-indigo-600 text-white p-4 lg:p-6 rounded-3xl">Hire Me</button>
+
+            <!-- social links -->
+            <div class="flex space-x-4 mt-4">
+                <h1 class="text-4xl font-bold">Join Me</h1>
+                <!-- github -->
+                <a href="https://github.com/kabzngarang254"><i class="fa fa-github text-5xl hover:text-purple-900"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/james-njoroge-b76b56292/"><i class="fa fa-linkedin text-5xl hover:text-purple-900"
+                        aria-hidden="true"></i></a>
+                <a href="https://twitter.com/Kabzgamer"><i class="fa fa-twitter text-5xl hover:text-purple-900"aria-hidden="true"></i></a>
+                <!-- whatsapp -->
+                <a href=""><i class="fa fa-whatsapp text-5xl hover:text-purple-900" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side (Image) -->
+    <div class="bg-gradient-to-r from-indigo-900 via-violet-600 to-indigo-900 lg:p-20  rounded-full">
+        <img src="img/new bg.png" alt="" class="w-96  mx-auto lg:mx-0">
+    </div>
+</div>
+
+<!-- Web Development -->
+    <div id="skills" class=" ml-10">
+        <h1 class="lg:text-6xl sm:text-3xl text-center font-bold mt-64 text-purple-700 sm:ml-40">Web Development</h1>
+    
+        <div class="mt-16  grid flex-col lg:ml-0 sm:justify-center gap-y-20  lg:grid-cols-2 sm:grid-cols-1 gap-5">
+    
+            <div
+                class="flex flex-col items-center justify-center bg-white rounded-xl shadow-2xl shadow-purple-800 w-full p-10">
+                <img src="img/icons8-html-logo-96.png" alt="" class="mb-2">
+                <p class="text-center text-3xl font-bold">HTML</p>
+                <p class="text-left lg:text-4xl text-gray-800 font-semibold sm:text-2xl">HTML skills are indispensable in the digital realm, forming the basis for web development.Whether you're a developer, designer, or content creator, mastering HTML is key to effective online
+                communication and active participation in the evolving digital landscape.</p>
+            </div>
+    
+            <div
+                class="flex flex-col items-center justify-center bg-white rounded-xl shadow-2xl shadow-purple-800 w-full p-10">
+                <img src="img/icons8-css-96.png" alt="" class="mb-2">
+                <p class="text-center text-4xl font-bold">CSS</p>
+                <p class="text-left lg:text-4xl text-gray-800 font-semibold sm:text-2xl">CSS expertise complements HTML skills, elevating web development by adding style and visual appeal.Whether you're
+                a developer or designer, combining HTML with CSS proficiency empowers you.</p>
+            </div>
+    
+            <div
+                class="flex flex-col items-center justify-center bg-white  rounded-xl shadow-2xl shadow-purple-800 w-full p-10">
+                <img src="img/icons8-github-96.png" alt="" class="mb-2">
+                <p class="text-center text-3xl font-bold">GitHub</p>
+                <p class="text-left lg:text-4xl text-gray-800 font-semibold sm:text-2xl">GitHub expertise is crucial for collaborative coding. It facilitates efficient version control, seamless collaboration,
+                and centralized code hosting. Whether you're a developer or project manager, GitHub skills streamline workflows </p>
+            </div>
+    
+            <div
+                class="flex flex-col items-center justify-center bg-white rounded-xl shadow-2xl  shadow-purple-800 w-full p-10 ">
+                <img src="img/icons8-javascript-96.png" alt="" class="mb-2">
+                <p class="text-center text-3xl font-bold">JavaScript</p>
+                <p class="text-left lg:text-4xl text-gray-800 font-semibold sm:text-2xl">JavaScript is key for dynamic web development, enabling interactive user interfaces and client-side functionality.
+                Whether on the front end, back end, or full stack, mastering JavaScript empowers developers to create lively experiences.</p>
+            </div>
+    
+            <div
+                class="flex flex-col items-center justify-center bg-white rounded-xl shadow-2xl  shadow-purple-800 w-full p-10 lg:mt-10">
+                <img src="img/icons8-git-96.png" alt="" class="mb-2">
+                <p class="text-center text-3xl font-bold">Git</p>
+                <p class="text-left lg:text-4xl text-gray-800 font-semibold sm:text-2xl">Git proficiency is fundamental for efficient version control in software development. It enables tracking changes,
+                collaboration, and maintaining a clean project history. Whether you're a developer or contributor, Git skills streamline the way sites can be hosted by developers.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="Portfolio" class="text-center mt-72 ml-10">
+        <h3 class="text-purple-500 text-5xl font-bold">Portfolio</h3>
+        <h1 class="text-gray-800 lg:text-9xl  font-bold sm:text-5xl">Featured Projects</h1>
+        <div class="flex flex-wrap lg:flex-row sm:flex-col -sm:flex-col gap-10 rounded-xl  mt-28 justify-center">
+    
+            <div class=" shadow-red-600"><a href="clotheshop/index.html"><video class="rounded-2xl shadow-lg shadow-red-700"
+                        src="video/JKNSHOP - Google Chrome 2023-11-23 17-20-19.mp4" autoplay muted height="500px" width="500px">
+                    </video></a>
+                <h1 class="lg:text-6xl sm:text-4xl font-bold mt-20">Clothes Shop</h1>
+            </div>
+    
+            <div class="rounded-full">
+                <a href="calculator/index.html">
+                <video class="rounded-2xl shadow-2xl shadow-pink-900"
+                        src="video/Document - Google Chrome 2023-11-23 17-21-08.mp4" autoplay muted height="500px"
+                        width="500px"></video></a>
+                <h1 class="lg:text-6xl sm:text-4xl font-bold mt-20">Calculator</h1>
+            </div>
+    
+            <div class=" rounded-full"><a href="carwebsite/index.htm"><video class="rounded-2xl shadow-2xl shadow-gray-900"
+                        src="video/Cars - Google Chrome 2023-11-23 17-47-26.mp4" autoplay muted height="500px"
+                        width="500px"></video></a>
+                <h1 class="lg:text-6xl sm:text-4xl font-bold mt-20">Car Finder<h1>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+    
+    <div id="about" class="mt-16 ml-10">
+        <h1 class="text-6xl font-serif text-center font-extrabold">ABOUT ME</h1>
+        <div class="container grid lg:grid-cols-5 sm:grid-cols-1 mx-auto p-8 mt-10 bg-white shadow-2xl shadow-purple-700 rounded-md tems-center gap-5">
+            <img src="img/new bg.png" alt=""
+                class="rounded-full  h-full w-full shadow-2xl shadow-purple-900">
+                <h1 class="text-6xl font-extrabold mb-4 text-purple-900">Hello, I'm James</h1>
+                <p class="text-gray-900 lg:text-3xl sm:text-xl font-bold mb-6">I am a passionate software developer currently pursuing my
+                    education. My
+                    journey into the world of coding began in 2023, and since then, I've been fascinated by the
+                    endless possibilities that programming offers. My primary focus is on Front-end & Back-end development
+                    and mobile apps.</p>
+                <p class="text-gray-900 lg:text-3xl sm:text-xl font-bold mb-6">Throughout my academic journey, I've had the opportunity to
+                    work on various
+                    projects that have honed my skills in HTML&CSS, PHP. My goal is to become a software developer and
+                    create vast options of apps that I've wished to create.
+                </p>
+                <p class="text-gray-900 lg:text-3xl sm:text-xl font-bold mb-6">When I'm not coding, you can find me gaming, music &
+                    cycling. I believe in continuous learning and am excited about the evolving landscape of technology.
+                    Let's
+                    connect and create something amazing together!</p>
+        </div>
+    </div>
+
+
+    <!-- contact page -->
+    <div id="contact" class="mt-48 flex-col">
+        <div class="text-center ml-5 mb-40">
+            <h1 class="text-5xl text-purple-900 font-extrabold ">Let's Talk</h1>
+            <h2 class="text-6xl  text-indigo-950 font-bold">Have a Project Idea?</h2>
+            <h2 class="text-6xl text-indigo-950 font-bold">Feel Free to Contact</h2>
+        </div>
+
+        <!-- info section -->
+        <div class="grid  lg:grid-cols-3 sm:grid-cols-1 lg:ml-96">
+        <div class="bg-gradient-to-r from-violet-500 via-violet-500 to-violet-500 text-dark-900 ml-2 rounded-lg shadow-lg shadow-purple-800 space-y-16 text-center">
+            <i class="fa fa-phone text-6xl" aria-hidden="true"></i>
+            <h1 class="font-bold lg:text-4xl sm:text-2xl"> Call: (+254) 740 289 578</h1>
+            <i class="fa fa-envelope text-6xl" aria-hidden="true"></i>
+            <h1 class="font-bold lg:text-4xl sm:text-2xl">Email:kabogp@gmail.com</h1>
+            <i class="fa fa-map-marker text-5xl" aria-hidden="true"></i>
+            <h1 class="font-bold lg:text-4xl sm:text-2xl">Location:Hunters,Nairobi,Kenya</h1>
+        </div>
+
+        <!-- form section -->
+        <div class="container flex w-96 mt-10 ml-40">
+            <div class=" space-y-20  justify-center">
+                <div class="">
+                    <label for="email" class="block text-xl font-semibold text-gray-600 mb-4">Name</label>
+                    <input type="text" id="email" placeholder="Enter your name" class="w-full border border-gray-300 p-10  rounded-md">
+                </div>
+
+                <div class="">
+                    <label for="email" class="block text-xl font-semibold text-gray-600 mb-4">Email</label>
+                    <input type="text" id="email" placeholder="Enter your email" class="w-full border border-gray-300 p-10 rounded-md">
+                </div>
+
+            <div class="">
+                <label for="email" class="block text-xl font-semibold text-gray-600 mb-4">Message</label>
+                <input type="text" id="email" placeholder="Enter your message" class="w-full border border-gray-300 p-16 rounded-md">
+            </div>
+            <button class="bg-indigo-600 text-white p-5 rounded-xl"><i class="fa fa-send" aria-hidden="true"></i> Send Message</button>
+            </div> 
+        </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-gray-900 m-0 ml-2 text-center mt-10">
+            <h1 class="font-bold text-white pt-20">James Kabogo</h1>
+            <div class="lg:flex sm:flex-row justify-center text-2xl space-x-10 pt-20 lg:ml-20 sm:text-center text-gray-400">
+                    <a href="#home">Home</a>
+                    <a href="#skills">Services</a>
+                    <a href="#Portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+
+        <div id="icons" class="text-white gap-10 pt-20 pb-20 space-x-10">
+            <a href="https://github.com/kabzngarang254"><i class="fa fa-github text-5xl hover:text-purple-900" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/james-njoroge-b76b56292/"><i class="fa fa-linkedin text-5xl hover:text-purple-900" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/Kabzgamer"><i class="fa fa-twitter text-5xl hover:text-purple-900" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p class="text-gray-500 pt-10 pb-10">&copy; Copyright 2023 James Kabogo.All Rights Reserved</p>
+    </div>
+
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var menuToggle = document.getElementById('menu-toggle');
+        var navLinks = document.querySelector('.lg\\:flex'); // The class name contains a colon, so we need to escape it with a backslash
+
+        menuToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('hidden');
+        });
+    });
+</script> --> 
+ <script>
+    function changeBackgroundColor() {
+   var body = document.body;
+
+        // Check if the body has a dark class
+        var isDarkMode = body.classList.contains("dark-mode");
+
+        // Toggle between light and dark mode
+        if (isDarkMode) {
+            body.classList.remove("dark-mode");
+        } else {
+            body.classList.add("dark-mode");
+        }
+    };
+    changeBackgroundColor();
+</script>
+</body>
+</html>
