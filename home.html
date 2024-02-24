@@ -51,11 +51,13 @@
 .mobile-links a:hover {
     background-color: rgb(168, 94, 241);
 }
+.navbar-mobile button{
+    margin-left: 10px;
+}
 
 .active {
     color: rgb(125, 13, 205); /* Change this to your desired active link color */
 }
-
 
     </style>
 </head>
@@ -63,18 +65,7 @@
     <!-- navigation bar -->
     <nav id="nav" class="shadow-lg fixed top-0 z-20 bg-white lg:w-full  ">
         <div class="container flex justify-between  py-20">
-            <h1 class="pl-20 font-bold text-4xl  sm:text-left"><i class="fa fa-user" aria-hidden="true"></i> <span class="text-red-700">Kabz</span> Ngarang.</h1>
-            <!-- links -->
-
-            <!-- <div class="navbar hidden lg:flex md:flex-row sm:flex-row space-x-32  text-4xl font-bold ">
-                <a href="#home" class="hover:-translate-x-5  hover: duration-300 text-purple-600 
-                 hover:text-purple-800 "><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                <a href="#skills" class="hover:-translate-x-5    hover: duration-300 hover:text-purple-800"><i class="fa fa-bars" aria-hidden="true"></i> Skills</a>
-                <a href="#Portfolio" class="hover:-translate-x-5  hover: duration-300 hover:text-purple-800"><i class="fa fa-briefcase" aria-hidden="true"></i> Portfolio</a>
-                <a href="#about" class="hover:-translate-x-5  hover: duration-300 hover:text-purple-800"><i class="fa fa-user-circle" aria-hidden="true"></i> About</a>
-                <a href="#contact" class="hover:-translate-x-5  hover: duration-300 hover:text-purple-800"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
-
-            </div> -->
+            <h1 class="pl-10 font-bold text-2xl lg:text-6xl  sm:text-left"><i class="fa fa-user" aria-hidden="true"></i> <span class="text-red-700">Kabz</span> Ngarang.</h1>
 
             <div class="navbar hidden lg:flex md:flex-row sm:flex-row space-x-32 text-4xl font-bold">
                 <a href="#home" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
@@ -87,7 +78,7 @@
             
             <!-- for small devices -->
             <div class="navbar-mobile lg:hidden md:block sm:hidden text-2xl font-extrabold">
-                <button class="text-blue-700" id="navToggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <button class="text-blue-700 0" id="navToggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
                 <!-- container element -->
                 <div class="mobile-links hidden bg-violet-200" >
                     <button class="bg-transparent" id="navClose"> <i><i class="fa fa-close" aria-hidden="true"></i></i></button>
@@ -105,7 +96,7 @@
     </nav>
 
     <!-- content -->
-<div id="home" class="container flex flex-col lg:flex-row items-center lg:items-start mt-52 ml-5  gap-20">
+<div id="home" class="container flex flex-col lg:flex-row items-center lg:items-start mt-60 ml-5  gap-20">
     
     <!-- Left Side -->
     <div class="text-center lg:text-left sm:ml-10  ">
@@ -136,53 +127,43 @@
 
     <!-- Right Side (Image) -->
     <div class="bg-gradient-to-r from-indigo-900 via-violet-600 to-indigo-900 lg:p-14  rounded-full">
-        <img src="img/new bg.png" alt="" class="w-96  mx-auto lg:mx-0">
+        <img src="img/new bg.png" alt="" class="animate-SlideRight w-96  mx-auto lg:mx-0">
     </div>
 </div>
 
 <!-- Web Development -->
-    <div id="skills" class="mt-3 pl-10">
-        <h1 class="text-6xl  text-center font-bold mt-28 text-purple-700 sm:ml-40">My Skills</h1>
-    
-        <div class="mt-16 grid  gap-y-8 lg:grid-cols-3 sm:grid-cols-2 ">
-    
-            <div
-                class="flex flex-col items-center justify-center bg-white rounded-xl shadow-2xl shadow-purple-800 p-2 w-96 transform transition-all hover:-translate-y-2 duration-300">
-                <img src="img/icons8-html-logo-96.png" alt="" class="mb-2">
-                <p class="text-center text-3xl font-bold">HTML</p>
-                <p class="text-left  text-3xl text-gray-800 font-semibold"></p>
-            </div>
-    
-            <div
-                class="flex flex-col items-center justify-center bg-white rounded-xl shadow-2xl shadow-purple-800  p-2 w-96 transform transition-all hover:-translate-y-2 duration-300">
-                <img src="img/icons8-css-96.png" alt="" class="mb-2">
-                <p class="text-center text-4xl font-bold ">CSS</p>
-                <p class="text-left text-3xl text-gray-800 font-semibold"></p>
-            </div>
-    
-            <div
-                class="flex flex-col items-center justify-center bg-white  rounded-xl shadow-2xl shadow-purple-800 p-2 w-96  transform transition-all hover:-translate-y-2 duration-300">
-                <img src="img/icons8-github-96.png" alt="" class="mb-2">
-                <p class="text-center text-3xl font-bold">GitHub</p>
-                <p class="text-left text-3xl text-gray-800 font-semibold "></p>
-            </div>
-    
-            <div class="flex flex-col items-center justify-center bg-white rounded-xl shadow-2xl  shadow-purple-800 p-2 w-96  transform transition-all hover:translate-y-2 duration-300">
-                <img src="img/icons8-git-96.png" alt="" class="mb-2">
-                <p class="text-center text-3xl font-bold">Git</p>
-                <p class="text-left text-3xl text-gray-800 font-semibold "></p>
-            </div>
+<h1 class="mb-20 mt-10 text-4xl lg:text-7xl md:text-5xl text-center font-extrabold"> My Skills</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 ">
 
-            <div
-                class="flex flex-col items-center justify-center bg-white rounded-xl shadow-2xl  shadow-purple-800 p-2 w-96  transform transition-all hover:translate-y-2 duration-300 ">
-                <img src="img/icons8-javascript-96.png" alt="" class="mb-2 ">
-                <p class="text-center text-3xl font-bold">JavaScript</p>
-                <p class="text-left text-3xl text-gray-800 font-semibold"></p>
-            </div>
-    
-
-        </div>
+    <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+        <img class="w-56 mx-auto" src="img/icons8-html-96.png" alt="">
+        <h2 class="text-center font-extrabold text-xl lg:text-3xl font-bold mt-4">HTML</h2>
     </div>
+    <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+        <img class="w-56 mx-auto" src="img/icons8-css-96.png" alt="">
+        <h2 class="text-center font-extrabold text-xl lg:text-3xl font-bold mt-4">CSS</h2>
+    </div>
+    <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+        <img class="w-56 mx-auto" src="img/icons8-javascript-96.png" alt="">
+        <h2 class="text-center font-extrabold text-xl  lg:text-3xl font-bold mt-4">Javascript</h2>
+    </div>
+    <div class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+        <img class="w-56 mx-auto" src="img/icons8-bootstrap-96.png" alt="">
+        <h2 class="text-center font-extrabold text-xl  lg:text-3xl font-bold mt-4">BootStrap</h2>
+    </div>
+    <div
+        class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+        <img class="w-56 mx-auto" src="img/icons8-tailwind-css-96.png" alt="">
+        <h2 class="text-center font-extrabold text-xl lg:text-3xl font-bold mt-4">TailWind CSS</h2>
+    </div>
+    <div
+        class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+        <img class="w-56 mx-auto" src="img/icons8-react-96.png" alt="">
+        <h2 class="text-center font-extrabold text-xl lg:text-3xl font-bold mt-4">React Js</h2>
+    </div>
+    
+
+  </div>
 
     <!-- portfolio -->
     <div id="Portfolio" class="text-center mt-60 ">
@@ -223,12 +204,10 @@
 <div id="about" class="mt-16   justify-center items-center">
     <h1 class="text-6xl font-serif text-center font-extrabold">ABOUT ME</h1>
     <div
-        class="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mx-auto p-5 mt-28 bg-white shadow-2xl shadow-purple-400 rounded-md items-center gap-5 flex justify-center items-center ml-4">
-        <img src="img/new bg.png" alt="Profile Picture"
-            class="rounded-full h-auto w-96 lg:h-full lg:w-auto shadow-2xl shadow-purple-900 lg:col-span-1">
-        <div class="lg:col-span-4">
-            <h2 class="text-2xl lg:text-6xl font-extrabold mb-4 text-purple-900">Hello, I'm James</h2>
-            <div class="text-2xl">
+        class="container flex flex-col   md:grid-cols-2 lg:grid-cols-1 mx-auto p-5 mt-28 bg-white shadow-2xl shadow-purple-400 rounded-md items-center flex  ml-4">
+        
+            <h2 class="text-center text-2xl lg:text-6xl font-extrabold mb-4 text-purple-900">Hello, I'm James</h2>
+            <div class="text-2xl lg:text-4xl md:text-3xl">
             <p class="text-gray-900  font-bold mb-6">I am a passionate software developer currently
                 pursuing my education. My journey into the world of coding began in 2023, and since then, I've been
                 fascinated by the endless possibilities that programming offers. My primary focus is on Front-end &
@@ -240,7 +219,6 @@
                 listening to music, or cycling. I believe in continuous learning and am excited about the evolving
                 landscape of technology. Let's connect and create something amazing together!</p>
                 </div>
-        </div>
     </div>
 </div>
 
