@@ -6,9 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileLinks.classList.toggle("hidden");
         
     });
-    // setTimeout(function () {
-    //     mobileLinks.classList.toggle("hidden");
-    // }, 3000);
     
     mobileLinks.addEventListener("click", function () {
         mobileLinks.classList.toggle("hidden");
