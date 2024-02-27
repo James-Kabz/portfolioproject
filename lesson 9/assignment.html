@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="oraimo_logo2.0.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ORAIMO WEBSITE</title>
+    <style>
+        @media  (min-width: 600px) {
+    .header{
+        flex-direction: column;
+    }
+ 
+  .copyright-box .copyright-text{
+        font-size: 30px;
+    }
+        }
+    @media(max-width: 600px) {
+    .copyright-box .copyright-text{
+        font-size: 20px;
+    }
+    .copyright-box{
+        background-color: green;
+        color: black;
+    }
+    .text-black{
+        flex-direction: row-reverse;
+        padding: 40px;
+    }
+}
+@media screen and (max-width:400px){
+    .card-title{
+        font-size: 10px;
+        margin: 5px;
+    }
+}
+.slide-text{
+    animation: slide 21s infinite linear;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-90%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!--header-->
+    <div class="custom-red p-3 text-sm">
+        <h5 class="slide-text text-black text-center">Freeshipping for orders above kshs 1500.Any other questions?Contact us at <a href="https//:kabogp@gmail.com">kabogp@gmail.com</a></h5>
+    </div>
+     <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-body-white">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container m-5">
+                <a class="navbar-brand" href="#">
+                    <img src="oraimo_logo2.0 (1).png" class="img-fluid" alt="Bootstrap" width="300px" height="70px">
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+                </a>
+            </div>
+        </nav>
+        <div class="container-fluid bg-white">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <div class="dropdown    m-3">
+                        <button class="btn  bg-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown">PRODUCTS</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li> &nbsp;&nbsp;POWER</li>
+                            <li>AUDIO</li>
+                            <li>WEARABLE</li>
+                        </ul>
+                    </div>
+                    <a class="nav-link active m-3" href="#">HOME</a>
+                    <a class="nav-link active m-3" href="#">DAILY DEALS</a>
+                    <a class="nav-link active m-3" href="#">SUPPORT</a>
+                    <a class="nav-link active m-3" href="#">Burna Boy x Oraimo| SpacePods</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--small header-->
+    <!-- <div class=" header custom-grey p-3 text-sm "> 
+        <h5 class=" text-black ">
+            <img src="https://media.ke.oraimo.com/wysiwyg/cms/shipping.png" alt="">Free delivery for orders above  KES1500 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://media.ke.oraimo.com/wysiwyg/cms/refund.png" alt=""> Cash on delivery
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://media.ke.oraimo.com/wysiwyg/cms/save.png" alt=""> Hassle-Free Warranty
+        </h5>
+     </div> -->
+     <hr>
+    <!--main section-->
+    <div class="container d-flex flex-wrap ">
+        <div class="row">
+            <div class="col-md-4 "> <!-- Left Column -->
+                <!-- Left content or image cards go here -->
+                <div>
+                    <p><a href="">HOME</a> > Great Deals</p>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="carosel1.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="carosell2.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="carosel3.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex flex-wrap "> <!-- Middle Column -->
+                <a href=""><i class="bi bi-grid-3x9-gap"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-grid-3x4-gap" viewBox="0 0 16 14">
+                        <path
+                            d="M4 2v2H2V2h2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 2v2H7V2h2zm5 0v2h-2V2h2zM4 7v2H2V7h2zm5 0v2H7V7h2zm5 0h-2v2h2V7zM4 12v2H2v-2h2zm5 0v2H7v-2h2zm5 0v2h-2v-2h2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z" />
+                    </svg></i></a>
+                    <a class="" href=""><i class="bi bi-list">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </i></a>Item 1-36 of 133
+                    <div class="toolbar-sorter sorter ">
+                        <label class="sorter-label" for="sorter">Sort By</label>
+                        <select id="sorter" data-role="sorter" class="sorter-options">
+                            <option value="position" selected="selected">
+                                Position </option>
+                            <option value="name">
+                                Product Name </option>
+                            <option value="price">
+                                Price </option>
+                        </select>
+                        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                    </div>
+                <div class="row">
+                    <div class="col-md-5 "> <!-- First sub-column for images -->
+                        <!-- Image cards go here for the first sub-column -->
+                            <div class="card custom-card">
+                                <img src="watch 3 plus.png" class="card-img-top img-fluid" alt="Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oraimo Watch 3 Plus Bluetooth Call</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">KES4,200</p>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <img src="electric tooth brush.jpg" class="card-img-top img-fluid" alt="Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oraimo SmartDent C2 Powerfull Sonic cleaning Electric Toothbrush</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">KES1,200</p>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <img src="riff 2.jpg" class="card-img-top img-fluid" alt="Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oraimo Riff 2 ENC Thumbing Bass 30-hr Playtime</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">KES2,700</p>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <img src="watch 2r.png" class="card-img-top img-fluid" alt="Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oraimo Watch 2R HD Bluetooth calling IP68 Large Screen </h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">KES5,900</p>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <img src="freepods pro.jpg" class="card-img-top img-fluid" alt="Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oraimo Freepods Pro ANC Active Noise Cancellation</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">KES4,800</p>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <img src="open pods.jpg" class="card-img-top img-fluid" alt="Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oraimo OpenPods 40Hr Playtime IPx5 4-mic Noise</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">KES9,200</p>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <img src="cleaner cordless.png" class="card-img-top img-fluid" alt="Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oraimo UltraCleaner Cordless Self-Standing Powerful</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">KES12,500</p>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <img src="freepods 4.jpg" class="card-img-top img-fluid" alt="Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oraimo Freepods 4 ANC With Havy Bass 35.5 hr Playtime</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">KES4,500</p>
+                                </div>
+                            </div>
+                        <div class="card custom-card">
+                            <img src="watch 4 plus.jpg" class="card-img-top img-fluid" alt="Image 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Oraimo Watch 4 Plus</h5>
+                                <br>
+                                <br> 
+                                <p class="card-text ">KES4,500</p>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="col-md-5 "> <!-- Second sub-column for images -->
+                        <!-- Image cards go here for the second sub-column -->
+                        <div class="card custom-card">
+                            <img src="type c cable.jpg" class="card-img-top img-fluid" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Oraimo SpeedLine 2 65w TYPE-C </h5>
+                                <br>
+                                <br>
+                                <p class="card-text">KES450</p>
+                            </div>
+                        </div>
+                        <div class="card custom-card ">
+                            <img src="hifi audio.png" class="card-img-top img-fluid" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Oraimo Trumpet 3 HIFI Audio with mic</h5>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="card-text">KES500</p>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <img src="smartbulb.jpg" class="card-img-top img-fluid" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Oraimo SmartBulb with Multiple 6 scene modes color Light bulb</h5>
+                                <br>
+                                
+                                <p class="card-text">KES900</p>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <img src="humidifier.jpg" class="card-img-top img-fluid" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Oraimo Humidifiers Top Fill 6l 28db Quiet Screen </h5>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="card-text">KES2,800</p>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <img src="kettle.jpg" class="card-img-top img-fluid" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title"> Oraimo-Double Wall Design Stainless Steel kettle</h5>
+                                <br>
+                                <br>
+                                <p class="card-text">KES3,800</p>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <img src="keyboard.jpg" class="card-img-top img-fluid" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Oraimo Wireless Keyboard Mouse Combo</h5>
+                                <br>
+                                <br>
+                                <p class="card-text">KES5,600</p>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <img src="carcharger.jpg" class="card-img-top img-fluid" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Oraimo Boulevard 18W Fast Charging Music Playing Dual USB</h5>
+                                <br>
+                                <br>
+                                <p class="card-text">KES3,500</p>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <img src="powerhub.jpg" class="card-img-top img-fluid" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Oraimo PowerHub Smart Fast Charging 3 USB ports</h5>
+                                <br>
+                                <br>
+                                
+                                <p class="card-text">KES2,900</p>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <img src="solar.png" class="card-img-top img-fluid" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Oraimo PowerSolar </h5>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="card-text">KES10,000</p>
+                            </div>
+                        </div>
+                                
+                                </div>
+                                <!--button-->
+                                <div class="button">
+                               <span class="active">Page &nbsp;<i class="fa fa-chevron-left" aria-hidden="true"></i> <a href="assignment.html">1</a></span>
+                               <span ><a href="assignment2.html">2</a></span>
+                               <span class="text-sm">3.... <i class="fa fa-chevron-right" aria-hidden="true"></i></i></span>
+                            </div>
+                        <!-- Add more image cards for the second sub-column as needed -->
+    </div>
+    </div>
+
+    <div class="Column col-md-2"> <!-- Right Column -->
+        <!-- Right content or image cards go here -->
+        <h1 class="text-center m-5"> OFFERS</h1>
+        <div class="card custom-card">
+            <img src="powerhub.jpg" class="card-img-top img-fluid" alt="Image 2">
+            <div class="card-body">
+                <h5 class="card-title">Oraimo PowerHub Smart Fast Charging 3 USB ports</h5>
+                <br>
+                <p class="card-text text-danger">BEFORE <br> KES2,900</p>
+                <p class="card-text">NOW <br>KES2,500</p>
+            </div>
+        </div>
+        <div class="card custom-card">
+            <img src="space pods.jpg" class="card-img-top img-fluid" alt="Image 2">
+            <div class="card-body">
+                <h5 class="card-title">Oraimo x Burna Boy SpacePods-Moonlight</h5>
+                <br>
+                <p class="card-text text-danger">BEFORE <br> KES10,000</p>
+                <p class="card-text">NOW <br>KES9,600</p>
+            </div>
+        </div>
+        <div class="card custom-card">
+            <img src="watch 4 plus.jpg" class="card-img-top img-fluid" alt="Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Oraimo Watch 4 Plus</h5>
+                <br>
+                <p class="card-text text-danger">BEFORE <br> KES4,500</p>
+                <p class="card-text">NOW <br>KES4,300</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="container-fluid footer bg-dark">
+            <div class="container py-5 ">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6 ">
+    
+                        <img src="oraimo_logo2.0.png" alt="Logo" width="300" height="300"
+                            class="d-inline-block ">
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-success">
+                        <h4 class="text-success mb-3 ">ABOUT US</h4>
+                        <div class="quick-access text-white">
+                            <a href="" class="btn  mb-2 text-white">ABOUT US</a><br>
+                            <a href="#" class="btn  mb-2 text-white">WHERE TO BUY</a><br>
+                            <a href="#" class="btn  mb-2 text-white">CONTACT US </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <h4 class="mb-3 text-success">Follow Us</h4>
+    
+                        <div class=" pt-2">
+                            <div class="d-flex align-items-center me-2">
+                                <a class="btn btn-outline-dark link-success btn-social me-2" href=""><i
+                                        class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <span class="text-light">Twitter</span>
+                            </div>
+                            <br>
+                            <div class="d-flex align-items-center me-2">
+                                <a class="btn btn-outline-dark link-success btn-social me-2" href=""><i
+                                        class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <span class="text-light">Facebook</span>
+                            </div>
+                            <br>
+                            <div class="d-flex align-items-center me-2">
+                                <a class="btn btn-outline-dark link-success btn-social me-2" href=""><i
+                                        class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <span class="text-light">Instagram</span>
+                            </div>
+                            <br>
+                            <div class="d-flex align-items-center me-2">
+                                <a class="btn btn-outline-dark link-success btn-social me-2" href=""><i
+                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <span class="text-light">LinkedIn</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <h4 class="mb-3 text-success">NEWSLETTER::</h4>
+                        <p class="text-white mb-2"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Tel: +254
+                            723 456789</p>
+                        <br>
+                        <p class="text-white mb-2"><i class="fa fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;Tel: +254 723 456789</p>
+                        <br>
+                        <p class="text-white mb-2"><i class="fa fa-envelope-o"
+                                aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;@oraimoke@gmail.com</p>
+                        <br>
+                        <p class="text-white mb-2"><i class="fa fa-book" aria-hidden="true"></i>
+                            </i>&nbsp;&nbsp;&nbsp;Customer hours Monday-Friday 9AM - 6PM</p>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+    <div class="copyright-box ">
+        <div class="copyright-text  text-center ">© 2013-2023 oraimo Copyright. oraimo Technology (HK) Ltd
+        </div>
+    </div>
+    <!--javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+  
+</body>
+</html>
