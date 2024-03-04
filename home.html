@@ -166,11 +166,12 @@
   </div>
 
     <!-- portfolio -->
-    <div id="Portfolio" class="justify-center items-center mt-60 ml-10 md:ml-28 lg:ml-48 text-center">
-        <h3 class="text-purple-500 text-5xl font-bold">Portfolio</h3>
-        <h1 class="text-gray-800 text-6xl  font-bold ">Featured Projects</h1>
-        <div class="grid grid-cols-1 lg:grid-cols-2  flex-wrap gap-10 rounded-xl  mt-28 ml-auto mr-auto ">
-    
+  
+    <div id="Portfolio" class="justify-center items-center mt-60  text-center ml-10">
+            <h3 class="text-purple-500 text-5xl font-bold">Portfolio</h3>
+            <h1 class="text-gray-800 text-6xl  font-bold ">Featured Projects</h1>
+        <div class="flex flex-wrap justify-center items-center gap-10 rounded-xl  mt-28 ml-auto mr-auto 
+        ml-14 md:ml-16 lg:ml-30">
             <div class=" shadow-red-600 "><a href="clotheshop/index.html"><video class="rounded-2xl shadow-lg shadow-red-700 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"
                         src="video/JKNSHOP - Google Chrome 2023-11-23 17-20-19.mp4" autoplay muted height="600px" width="600px">
                     </video></a>
@@ -230,17 +231,17 @@
 </div>
 
     <!-- contact page -->
-    <div id="contact" class="mt-40 flex-col">
-        <div class="justify-center text-center ml-5 mr-auto mb-32">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl text-purple-900 font-extrabold ">Let's Talk</h1>
-            <h2 class="text-3xl md:text-5xl lg:text-6xl  text-indigo-950 font-bold">Have a Project Idea?</h2>
-            <h2 class="text-3xl md:text-5xl lg:text-6xl text-indigo-950 font-bold">Feel Free to Contact</h2>
-        </div>
+<div id="contact" class="mt-40">
+    <div class="justify-center text-center ml-5 mr-auto mb-32">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl text-purple-900 font-extrabold">Let's Talk</h1>
+        <h2 class="text-3xl md:text-5xl lg:text-6xl text-indigo-950 font-bold">Have a Project Idea?</h2>
+        <h2 class="text-3xl md:text-5xl lg:text-6xl text-indigo-950 font-bold">Feel Free to Contact</h2>
+    </div>
 
-        <!-- info section -->
-    <div class="grid lg:grid-cols-3  md:grid-cols-2  sm:grid-cols-1 lg:ml-96 sm:ml-auto lg:mr-auto justify-center items-center ">
+    <!-- info section -->
+    <div class="flex flex-wrap justify-center items-center ml-10 lg:ml-auto lg:mr-auto">
         <div style="width: 400px;"
-            class="bg-gradient-to-r from-violet-500 via-violet-500 to-violet-500 text-purple-100 rounded-lg shadow-lg shadow-purple-800 space-y-8 text-center justify-center lg:mr-3 p-5">
+            class="bg-gradient-to-r from-violet-500 via-violet-500 to-violet-500 text-purple-100 rounded-lg shadow-lg shadow-purple-800 space-y-4 text-center justify-center lg:mr-3 p-5">
             <i class="fa fa-phone text-4xl sm:text-6xl" aria-hidden="true"></i>
             <h1 class="font-bold text-xl lg:text-4xl sm:text-2xl"> Call: (+254) 740 289 578</h1>
             <i class="fa fa-envelope text-4xl sm:text-6xl" aria-hidden="true"></i>
@@ -248,32 +249,33 @@
             <i class="fa fa-map-marker text-3xl sm:text-5xl" aria-hidden="true"></i>
             <h1 class="font-bold text-xl lg:text-4xl sm:text-2xl">Location: Hunters, Nairobi, Kenya</h1>
         </div>
-    
+
         <!-- form section -->
-        <div class="container flex flex-col justify-center text-center mt-10">
-            <div class="mx-auto w-full max-w-xs space-y-16  ">
+        <div class="container justify-center text-center mt-10">
+            <div class="mx-auto w-full max-w-xs space-y-5 lg:space-x-0">
                 <div>
-                    <label for="name" class="block text-3xl font-semibold text-gray-600 mb-2">Name</label>
+                    <label for="name" class="block text-4xl font-semibold text-gray-600 mb-2">Name</label>
                     <input type="text" id="name" placeholder="Enter your name"
-                        class="w-full border border-gray-300 px-7 py-5 p-10 rounded-md">
+                        class="w-full bg-purple-100 border border-gray-300  px-20 py-5 p-20 rounded-md">
                 </div>
-    
+
                 <div>
-                    <label for="email" class="block text-3xl font-semibold text-gray-600 mb-2">Email</label>
+                    <label for="email" class="block text-4xl font-semibold text-dark-900 mb-2">Email</label>
                     <input type="text" id="email" placeholder="Enter your email"
-                        class="w-full border border-gray-300 px-7 py-5 p-10 rounded-md">
+                        class="w-full  bg-purple-100 border-gray-300 px-20 py-5 p-20 rounded-md">
                 </div>
-    
+
                 <div>
-                    <label for="message" class="block text-3xl font-semibold text-gray-600 mb-2">Message</label>
+                    <label for="message" class="block text-4xl font-semibold  text-dark-900 mb-2">Message</label>
                     <textarea id="message" placeholder="Enter your message"
-                        class="w-full border border-gray-300 px-4 py-4 rounded-md"></textarea>
+                        class="w-full bg-purple-100 border-gray-300 text-dark-900 px-20 py-5 p-20 rounded-md"></textarea>
                 </div>
-                <button class="bg-indigo-600 text-white px-10 py-6 p-10 rounded-xl"><i class="fa fa-send" aria-hidden="true"></i>
-                    Send Message</button>
+                <button class="bg-indigo-600 text-white px-10 py-6 p-10 rounded-xl"><i class="fa fa-send"
+                        aria-hidden="true"></i> Send Message</button>
             </div>
         </div>
     </div>
+</div>
 
 
     <!--footer -->
