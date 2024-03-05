@@ -35,7 +35,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         const targetedSection = document.querySelector(this.getAttribute('href'));
         const navHeight = document.querySelector('nav').offsetHeight;
-        
+        let extraPadding = 0;
 
         if (window.innerWidth >= 768) {
             extraPadding = 50;
@@ -49,7 +49,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         // root path
         if (window.location.hash) {
-            window.location.replace(window.location.pathname)
+         
+            window.history.replaceState(null, null, window.location.pathname);
         }
 
     })
