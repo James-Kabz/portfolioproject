@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
     <style>
-           @media (max-width: 768px) {
+           @media (max-width: 800px) {
         /* Apply styles only when the screen width is 768 pixels or less */
         #nav{
             width: 100%; /* Make the navigation bar full width on small screens */
@@ -36,12 +36,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px;
+    padding: 50px;
     width: 100%;
+    height: 1000px;
 }
 
 .mobile-links a {
-    padding: 2px;
+    padding: 15px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
     font-weight: 900;
@@ -49,10 +51,10 @@
 }
 
 .mobile-links a:hover {
-    background-color: rgb(168, 94, 241);
+    background-color: transparent;
 }
 .navbar-mobile button{
-    margin-right: 10px ;
+    margin-right: 0px ;
 }
 
 .active {
@@ -61,11 +63,11 @@
 
     </style>
 </head>
-<body class=" justify-center">
+<body class="">
     <!-- navigation bar -->
     <nav id="nav" class="shadow-lg fixed top-0 z-20 bg-white h-24 md:h-28 lg:h-36 lg:w-full  ">
         <div class="container flex justify-between  py-6 md:py-9 lg:py-12">
-            <h1 class="pl-10 font-bold text-2xl lg:text-5xl sm:text-left"><i class="fa fa-user" aria-hidden="true"></i> <span class="text-red-700">Kabz</span> Ngarang.</h1>
+            <h1 class="pl-10 font-bold text-2xl lg:text-5xl sm:text-left"><i class="fa fa-user" aria-hidden="true"></i> <span class="text-red-700">James</span> Kabogo.</h1>
 
             <div class="navbar hidden lg:flex md:flex-row sm:flex-row space-x-32 text-4xl font-bold">
                 <a href="#home" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
@@ -78,15 +80,29 @@
             
             <!-- for small devices -->
             <div class="navbar-mobile lg:hidden md:block sm:hidden text-2xl font-extrabold">
-                <button class="text-blue-700 0" id="navToggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <button class="text-purple-700 " id="navToggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
                 <!-- container element -->
-                <div class="mobile-links hidden bg-violet-200" >
-                    <button class="bg-transparent" id="navClose"> <i><i class="fa fa-close" aria-hidden="true"></i></i></button>
+                <div class="mobile-links hidden bg-purple-400" >
+                    <button class="bg-transparent" id="navClose"> <i><i class="fa fa-close text-5xl" aria-hidden="true"></i></i></button>
                     <a href="#home">Home</a>
                     <a href="#skills">Skills</a>
                     <a href="#Portfolio">Portfolio</a>
                     <a href="#about">About</a>
                     <a href="#contact">Contact</a>
+
+                    <div class="text-center mt-24 text-dark-900">
+                        <a href="https://github.com/kabzngarang254"><i class="fa fa-github text-3xl lg:text-5xl hover:text-purple-900"
+                                aria-hidden="true"></i></a>
+                                
+                        <a href="https://www.linkedin.com/in/james-njoroge-b76b56292/"><i class="fa fa-linkedin text-3xl lg:text-5xl hover:text-purple-900"
+                                aria-hidden="true"></i></a>
+
+                        <a href="https://twitter.com/Kabzgamer"><i class="fa fa-twitter text-3xl lg:text-5xl hover:text-purple-900"
+                                aria-hidden="true"></i></a>
+                        <!-- whatsapp -->
+
+                        <a href=""><i class="fa fa-whatsapp text-3xl lg:text-5xl hover:text-purple-900" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -102,13 +118,13 @@
     <div class="text-center lg:text-left items-center justify-center lg:ml-5  ">
         <div class="pt-4 lg:pt-0 justify-between space-y-4 lg:space-y-5 ">
             <h4 class="text-gray-900 font-bold text-3xl lg:text-4xl">Hello, It's Me</h4>
-            <h1 class="text-gray-800 font-extrabold text-5xl lg:text-7xl"><span class="text-red-700">Kabz</span> Ngarang</h1>
+            <h1 class="text-gray-800 font-extrabold text-5xl lg:text-7xl"><span class="text-red-700">James</span> Kabogo</h1>
             <h3 class="text-gray-700 font-bold text-4xl lg:text-10xl">And I'm a Web Developer|</h3>
             <p class="text-gray-600 font-medium text-xl lg:text-5xl ">I specialize in developing and building responsive
                 websites that are not <br> only beautiful but also enhance seamless user experience</p>
 
             <!-- button -->
-            <button class="btn bg-indigo-600 text-white p-4 lg:p-6 rounded-3xl">Hire Me</button>
+            <button class="btn bg-purple-600 text-white p-4 lg:p-6 rounded-3xl">Hire Me</button>
 
             <!-- social links -->
             <div class="flex space-x-4 mt-4">
@@ -132,7 +148,7 @@
 </div>
 
 <!-- Web Development -->
-<h1 class="mb-20 mt-10 text-4xl lg:text-7xl md:text-5xl text-center font-extrabold "> My Skills</h1>
+<h1 id="skills" class="mb-20 mt-10 text-4xl lg:text-7xl md:text-5xl text-center font-extrabold "> My Skills</h1>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 justify-center items-center ml-0 md:ml-0 lg:ml-0  ">
 
     <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
@@ -172,31 +188,50 @@
             <h1 class="text-gray-800 text-4xl lg:text-6xl font-bold ">Featured Projects</h1>
         <div class="flex flex-wrap justify-center items-center gap-10 rounded-xl  mt-28 ml-auto mr-auto 
         ml-0 md:ml-16 lg:ml-30">
-            <div class=" shadow-red-600 "><a href="clotheshop/index.html"><video class="rounded-2xl shadow-lg shadow-red-700 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"
+
+
+            <div class=" shadow-red-600 relative transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                <a href="clotheshop/index.html">
+                    <video class="rounded-2xl shadow-lg shadow-red-700"
                         src="video/JKNSHOP - Google Chrome 2023-11-23 17-20-19.mp4" autoplay muted height="600px" width="600px">
                     </video></a>
-                <h1 class="text-4xl font-bold mt-20 ">Clothes Shop</h1>
+                <div
+                    class="text-center absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity rounded-2xl">
+                    <h1 class="text-white text-2xl lg:text-5xl font-extrabold text-center mt-48">Clothe Shop </h1>
+                </div>
             </div>
     
-            <div class="rounded-full">
+            <div class="rounded-full relative transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
                 <a href="calculator/index.html">
-                <video class="rounded-2xl shadow-2xl shadow-pink-900 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"
+                <video class="rounded-2xl shadow-2xl shadow-pink-900"
                         src="video/Document - Google Chrome 2023-11-23 17-21-08.mp4" autoplay muted height="600px"
                         width="600px"></video></a>
-                <h1 class="text-4xl font-bold mt-20">Calculator</h1>
+                <div
+                    class="text-center absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity rounded-2xl">
+                    <h1 class="text-white text-2xl lg:text-5xl font-bold mt-48">Calculator </h1>
+                </div>
             </div>
     
-            <div class=" rounded-full "><a href="carwebsite/index.htm"><video class="rounded-2xl shadow-2xl shadow-gray-900 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"
+            <div class=" rounded-full relative transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                <a href="carwebsite/index.htm"><video class="rounded-2xl shadow-2xl shadow-gray-900"
                         src="video/Cars - Google Chrome 2023-11-23 17-47-26.mp4" autoplay muted height="600px"
                         width="600px"></video></a>
-                <h1 class="text-4xl font-bold mt-20">Car Finder<h1>
+                <div
+                    class="text-center absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity rounded-2xl">
+                    <h1 class="text-white text-2xl lg:text-5xl font-bold mt-48">Car Finder </h1>
+                </div>
             </div>
 
-            <div class=" rounded-full "><a href="lesson 9/assignment.html"><video
-                        class="rounded-2xl shadow-2xl shadow-green-600 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"
+            <div class=" rounded-full relative transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl ">
+                <a href="lesson 9/assignment.html">
+                    <video
+                        class="rounded-2xl shadow-2xl shadow-green-600 "
                         src="video/oraimo.mp4" autoplay muted height="700px"
                         width="600px"></video></a>
-                <h1 class="text-4xl font-bold mt-20">Oraimo<h1>
+                    <div
+                        class="text-center absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity rounded-2xl">
+                        <h1 class="text-white text-2xl lg:text-5xl font-bold mt-48">Oraimo</h1>
+                    </div>
             </div>
 
         </div>
@@ -241,7 +276,7 @@
     <!-- info section -->
     <div class="flex flex-wrap justify-center items-center ml-0 lg:ml-auto lg:mr-auto">
         <div style="width: 400px;"
-            class="bg-gradient-to-r from-violet-500 via-violet-500 to-violet-500 text-purple-100 rounded-lg shadow-lg shadow-purple-800 space-y-4 text-center justify-center lg:mr-3 p-5">
+            class="bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 rounded-lg shadow-lg shadow-purple-800 space-y-4 text-center justify-center lg:mr-3 p-5">
             <i class="fa fa-phone text-4xl sm:text-6xl" aria-hidden="true"></i>
             <h1 class="font-bold text-xl lg:text-4xl sm:text-2xl"> Call: (+254) 740 289 578</h1>
             <i class="fa fa-envelope text-4xl sm:text-6xl" aria-hidden="true"></i>
@@ -270,7 +305,7 @@
                     <textarea id="message" placeholder="Enter your message"
                         class="w-full bg-purple-100 border-gray-300 text-dark-900 px-20 py-5 p-20 rounded-md"></textarea>
                 </div>
-                <button class="bg-indigo-600 text-white px-10 py-6 p-10 rounded-xl"><i class="fa fa-send"
+                <button class="bg-purple-600 text-white px-10 py-6 p-10 rounded-xl"><i class="fa fa-send"
                         aria-hidden="true"></i> Send Message</button>
             </div>
         </div>
