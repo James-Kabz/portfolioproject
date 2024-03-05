@@ -1,3 +1,4 @@
+// nav bar js code
 document.addEventListener("DOMContentLoaded", function () {
     const navToggle = document.getElementById("navToggle");
     const mobileLinks = document.querySelector(".mobile-links");
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// color change on click
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('.nav-link');
 
@@ -24,4 +26,32 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+// navigation smooth  scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetedSection = document.querySelector(this.getAttribute('href'));
+        const navHeight = document.querySelector('nav').offsetHeight;
+        
+
+        if (window.innerWidth >= 768) {
+            extraPadding = 50;
+        }
+
+        window.scrollTo({
+            top: targetedSection.offsetTop - navHeight - extraPadding,
+            behavior: 'smooth'
+
+        });
+        
+        // root path
+        if (window.location.hash) {
+            window.location.replace(window.location.pathname)
+        }
+
+    })
+})
 
